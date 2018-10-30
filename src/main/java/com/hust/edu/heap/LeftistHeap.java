@@ -1,4 +1,4 @@
-package com.hust.edu.queue;// LeftistHeap class
+package com.hust.edu.heap;// LeftistHeap class
 //
 // CONSTRUCTION: with a negative infinity sentinel
 //
