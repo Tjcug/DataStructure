@@ -81,7 +81,7 @@ public static class Node implements Comparable<Node>{
 
     public static Map<Character,Integer> dijkstra(Map<Character,List<Node>> map,Character c) {
         //Queue<Node> heap=new LinkedList<Node>();
-        PriorityQueue<Node> heap=new PriorityQueue<>();
+        Queue<Node> heap=new PriorityQueue<>();
         //初始节点
         Node root=new Node(c,c,0);
         root.setPath(0);
