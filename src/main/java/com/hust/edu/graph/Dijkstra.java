@@ -102,14 +102,14 @@ public static class Node implements Comparable<Node>{
                 heap.add(y);
 
                 if(!y.known) {
-                    if(y.getPath() > x.getDes()+y.getLen())
+                    if(y.getPath() > x.getPath()+y.getLen())
                         y.setPath(x.getPath()+y.getLen());
                 }
 
                 if(result.get(y.getDes())==null) {
                     result.put(y.getDes(),y.getPath());
                 }
-                if(result.get(y.getDes())>y.getPath()) {
+                if(result.get(y.getDes()) > y.getPath()) {
                     result.put(y.getDes(),y.getPath());
                 }
             }
